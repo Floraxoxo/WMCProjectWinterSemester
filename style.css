@@ -1,0 +1,83 @@
+/* general info */
+html, body {
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: Centaur;
+    color: #333333;
+}
+/*-----------*/
+/* nav stuff */
+#nav{
+    align-items: center;
+    width: 100%;
+}
+#nav ul {
+    list-style-type: none;
+    margin: -0.1rem;
+    padding: 0.5rem;
+    overflow: hidden;
+    background-color: #333333;
+}
+#nav li {
+    float: left;
+}
+#nav li a {
+    font-family: "Agency FB";
+    font-size: 1.5rem;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 15px;
+    padding-inline: 2.4rem;
+    text-decoration: none;
+}
+#nav li a:hover {
+    background-color: #111111;
+}
+#nav img{
+    width: 2.6rem;
+    height: 2.6rem;
+    margin-inline: 0.5rem;
+    align-content: center;
+    margin: 7px 7px;
+}
+/*-----------*/
+/*nav downwards*/
+#navDownwards {
+    float: left;
+    margin-right: 1%;
+    width: 10%;
+    height: 100%;
+    background-color: #464646;
+}
+#navDownwards a{
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+/*-----------*/
+/*introduction*/
+#introduction{
+    float: right;
+    width: 90%;
+    height: 60%;
+    overflow-y: scroll;
+}
+#introduction h1{
+    position:absolute;
+    top: 55%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    text-align: center;
+    font-size: 8rem;
+}
+
+/*-----------*/
+
+/*home*/
+/*-----------*/
+
+
