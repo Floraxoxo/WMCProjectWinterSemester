@@ -4,25 +4,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CSS about CSS</title>
-    <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="introduction.css">
 </head>
 <body>
-
 <div id="nav">
     <ul>
         <li><img src="wmc.webp"></li>
-        <li id="home"><a href="home.html">Home</a></li>
         <li><a href="introduction.html">Introduction</a></li>
-        <li><a href="#history">History</a></li>
-        <li><a href="#functions">Functions</a></li>
+        <li><a href="history.html">History</a></li>
+        <li><a href="selectors.html">Selectors</a></li>
+        <li><a href="functions.html">Functions</a></li>
     </ul>
 </div>
 <div id="navDownwards">
-    <a href="#introduction">Welcome</a>
+    <ul>
+        <li><a href="#">Welcome</a></li>
+        <li><a href="#information">Info</a></li>
+
+    </ul>
 </div>
-<div id="introduction">
-    <h1>Welcomte to<br>CSS about CSS</h1>
+<div class="content">
+    <div id="introduction">
+        <h1>Welcome to<br>CSS about CSS</h1>
+    </div>
+    <div class="information">
+        <p>
+            Cascading Style Sheets, commonly known as CSS, stands as a foundational and indispensable stylesheet language in the realm of web development. It serves the pivotal role of defining the presentation, layout, and styling of documents written in HTML or XML, contributing significantly to the visual allure and user experience of websites across the internet.
+        </p>
+        <p>
+            Originally introduced in several numbered versions, CSS has undergone a continuous evolution, refining and expanding its capabilities over the years. Today, the language is universally recognized and referred to simply as CSS, reflecting its establishment as one of the core languages that underpin the open web. This versatility has made CSS an integral part of the web development landscape, allowing designers and developers to transform raw HTML structures into visually compelling and responsive interfaces. <br>
+            You can find more about the revolution of CSS in the <a href="history.html">history</a> section.
+        </p>
+        <p>
+            The core functionality of CSS extends far beyond the mere application of colors and fonts. CSS provides a comprehensive toolkit for web designers, enabling the customization of spacing, positioning, and other stylistic elements to create aesthetically pleasing and user-friendly websites. The language's adaptability is particularly evident in its support for responsive design, allowing developers to craft layouts that seamlessly adjust to different screen sizes and device types, ensuring an optimal user experience across diverse platforms.
+            In the process of styling elements, CSS offers a range of <a href="selectors.html">selectors</a> such as '.', '>', '+', and many other. These selectors empower developers to precisely target and style specific elements or groups of elements within a document. Moreover, CSS introduces the concepts of classes and IDs, which play a crucial role in organizing and modularizing styles. Classes and IDs provide developers with the means to apply consistent styles to multiple elements or to uniquely style specific elements, enhancing the maintainability and scalability of the codebase.
+        </p>
+        <p>
+            Beyond its syntax and selectors, CSS promotes the separation of content and presentation, a key principle that fosters cleaner and more maintainable code. This separation facilitates collaboration among developers and designers, as well as the ability to update the visual aspects of a website without altering its underlying content. <br>
+            A few functions of CSS are described and explained in the <a href="functions.html">function</a> section.
+            In summary, CSS stands as a dynamic and evolving language that not only beautifies webpages but also facilitates the creation of well-structured, responsive, and maintainable web designs. Its influence extends far beyond its role as a styling tool, making it an indispensable component in the toolkit of any web developer striving to create engaging and user-friendly online experiences.
+        </p>
+        <p>
+
+        </p>
+    </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>
