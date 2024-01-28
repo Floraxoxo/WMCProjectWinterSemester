@@ -32,6 +32,120 @@
 
         However, there are many different types of selectors:
     </p>
+    <div class="information">
+    <h2><b>Basic Selectors</b></h2>
+
+    <p>If you want to select...</p>
+    <div class="accordion accordion-flush" id="accordionFlushExample0ne">
+        <div class="flexcontainer">
+        <div class="accordion-item felxbox">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                    <div>all items</div>
+                </button>
+            </h3>
+            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <div class="border">
+                        <code>
+                            * {
+                            <div class="abstand">color: red;</div>
+                            }
+                        </code>
+                    </div>
+                    <div>Selects all items. In this case it colors every element red</div>
+                    <div class="border">
+                        <code>
+                            div * {
+                            <div class="abstand">color: red;</div>
+                            }
+                        </code>
+                    </div>
+                    <div>Selects all items inside a certain element. In this case it colors every p element inside a div red.</div>
+                </div>
+            </div>
+        </div>
+        <div class="accordion-item felxbox">
+            <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                    <div>specific items</div>
+                </button>
+            </h3>
+            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-body">
+                    <div class="border">
+                        <code>
+                            p {
+                            <div class="abstand">color: red;</div>
+                            }
+                        </code>
+                    </div>
+                    <div>Selects all p elements. In this case it colors every p element red.</div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+
+
+
+    <h2><b>Classes & IDs</b></h2>
+    <div class="accordion accordion-flush" id="accordionFlushExampleTwo">
+        <div class="flexcontainer">
+            <div class="accordion-item felxbox">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                        <div>Classes</div>
+                    </button>
+                </h3>
+                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="border">
+                            <code>
+                                * {
+                                <div class="abstand">color: red;</div>
+                                }
+                            </code>
+                        </div>
+                        <div>Selects all items. In this case it colors every element red</div>
+                        <div class="border">
+                            <code>
+                                div * {
+                                <div class="abstand">color: red;</div>
+                                }
+                            </code>
+                        </div>
+                        <div>Selects all items inside a certain element. In this case it colors every p element inside a div red.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="accordion-item felxbox">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                        <div>IDs</div>
+                    </button>
+                </h3>
+                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                        <div class="border">
+                            CSS:<br>
+                            <code>
+                                #nameOfAnID {
+                                <div class="abstand">color: red;</div>
+                                }
+                            </code> <br>
+                            HTML: <br>
+                            <code>
+                                < p id="nameOfAnID" >hello < /p >
+                            </code>
+                        </div>
+                        <div>Selects all p elements. In this case it colors every p element red.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
 </div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 </body>

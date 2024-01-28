@@ -10,3 +10,32 @@ h1:hover{
 .content{
     padding-top: 2.5rem;
 }
+div.border{
+    border-style: solid;
+    border-radius: 5px;
+    width: 100%;
+    margin: 2%;
+    padding: 5%;
+
+}
+.accordion-header{
+    border-style: solid;
+    border-color: #444444;
+    margin-inline: 2px;
+}
+
+.flexcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+.felxbox{
+    width:50%;
+}
+.abstand {
+    padding-left: 2rem;
+}
+
+button div{
+    font-size: 1.5rem;
+}
