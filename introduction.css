@@ -17,21 +17,22 @@
 }
 /*-----------*/
 /*information*/
-#information{
+#info{
     float: right;
     width: 100%;
-    padding-top: 5rem;
+    padding-top: 5.5rem;
 }
-#information p{
+#info p{
     padding-bottom: 1rem;
 }
 
-#information a{
+
+#info a{
     text-decoration: none;
     color: #3799d6;
     transition: font-size 2s ease;
 }
-#information a:hover{
+#info a:hover{
     font-size: 2rem;
 }
 /*-----------*/

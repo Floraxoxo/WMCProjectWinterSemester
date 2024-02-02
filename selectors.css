@@ -34,8 +34,13 @@ div.border{
 }
 .abstand {
     padding-left: 2rem;
+    color: #444444;
+    font-size: 1.1rem;
 }
 
 button div{
     font-size: 1.5rem;
+}
+code{
+    color: #3799d6;
 }

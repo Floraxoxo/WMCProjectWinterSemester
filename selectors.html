@@ -2,11 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>CSS about CSS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="selectors.css">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="selectors.css" rel="stylesheet">
 </head>
 <body>
 
@@ -27,126 +28,309 @@
 <div class="content">
     <h1>Selectors</h1>
     <p>
-        As already mentioned in the introduction there are many different selectors. But what exactly is a selector? A selector is a pattern used
-        to select the elements of a document you want to style. Basically they are used to target HTML elements on a web page. <br>
-
-        However, there are many different types of selectors:
+        As previously introduced, the realm of CSS encompasses a diverse array of selectors, each serving a unique
+        purpose in styling web documents. In essence, a selector functions as a discerning pattern employed to pinpoint
+        specific elements within a document for styling purposes. These patterns, when applied in CSS, act as directives
+        to select and modify the appearance of HTML elements on a web page. Selectors play a pivotal role in the
+        customization of the visual presentation of a website by allowing developers to target and style particular
+        elements based on their structure or attributes. The versatility of selectors in CSS enables developers to wield
+        a wide range of strategies in tailoring the look and feel of a webpage, contributing to the flexibility and
+        precision of the styling process.
     </p>
+    <p>However, here are some of the most important selectors and a short description:</p>
     <div class="information">
-    <h2><b>Basic Selectors</b></h2>
+        <h2><b>Basic Selectors</b></h2>
 
-    <p>If you want to select...</p>
-    <div class="accordion accordion-flush" id="accordionFlushExample0ne">
-        <div class="flexcontainer">
-        <div class="accordion-item felxbox">
-            <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                    <div>all items</div>
-                </button>
-            </h3>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                    <div class="border">
-                        <code>
-                            * {
-                            <div class="abstand">color: red;</div>
-                            }
-                        </code>
+        <p>If you want to select...</p>
+        <div class="accordion accordion-flush" id="accordionFlushExample0ne">
+            <div class="flexcontainer">
+                <div class="accordion-item felxbox">
+                    <h3 class="accordion-header">
+                        <button aria-controls="flush-collapseOne" aria-expanded="false"
+                                class="accordion-button collapsed"
+                                data-bs-target="#flush-collapseOne" data-bs-toggle="collapse"
+                                type="button">
+                            <div>all items</div>
+                        </button>
+                    </h3>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
+                         id="flush-collapseOne">
+                        <div class="accordion-body">
+                            <div class="border">
+                                <code>
+                                    * {
+                                    <div class="abstand">color: red;</div>
+                                    }
+                                </code>
+                            </div>
+                            <div>Selects all items. In this case it colors every element red</div>
+                            <div class="border">
+                                <code>
+                                    div * {
+                                    <div class="abstand">color: red;</div>
+                                    }
+                                </code>
+                            </div>
+                            <div>Selects all items inside a certain element. In this case it colors every p element
+                                inside a div red.
+                            </div>
+                        </div>
                     </div>
-                    <div>Selects all items. In this case it colors every element red</div>
-                    <div class="border">
-                        <code>
-                            div * {
-                            <div class="abstand">color: red;</div>
-                            }
-                        </code>
+                </div>
+                <div class="accordion-item felxbox">
+                    <h3 class="accordion-header">
+                        <button aria-controls="flush-collapseTwo" aria-expanded="false"
+                                class="accordion-button collapsed"
+                                data-bs-target="#flush-collapseTwo" data-bs-toggle="collapse"
+                                type="button">
+                            <div>specific items</div>
+                        </button>
+                    </h3>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
+                         id="flush-collapseTwo">
+                        <div class="accordion-body">
+                            <div class="border">
+                                <code>
+                                    p {
+                                    <div class="abstand">color: red;</div>
+                                    }
+                                </code>
+                            </div>
+                            <div>Selects all p elements. In this case it colors every p element red.</div>
+                        </div>
                     </div>
-                    <div>Selects all items inside a certain element. In this case it colors every p element inside a div red.</div>
                 </div>
             </div>
         </div>
-        <div class="accordion-item felxbox">
-            <h3 class="accordion-header">
-                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                    <div>specific items</div>
-                </button>
-            </h3>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">
-                    <div class="border">
-                        <code>
-                            p {
-                            <div class="abstand">color: red;</div>
-                            }
-                        </code>
+
+        <h2><b>Classes & IDs</b></h2>
+        <p>
+            CSS classes and IDs are integral elements in web development, serving the shared purpose of styling HTML
+            elements to create visually appealing interfaces. Both use a consistent selector syntax in CSS, enabling
+            developers to apply styles by associating a class or ID with an HTML element. However, their differences are
+            crucial for effective use. Classes are versatile, capable of being applied to multiple elements, making them
+            ideal for styling groups with shared characteristics. In contrast, IDs must be unique within a page,
+            providing a means to uniquely identify and style specific individual elements. Moreover, the specificity of
+            IDs is higher than that of classes, influencing the precedence of conflicting styles.
+        </p>
+        <p>
+            Classes in CSS are typically used to apply a common set of styles to multiple HTML elements, promoting
+            consistency and efficient styling across a website while IDs are typically used to uniquely identify and
+            style specific individual HTML elements within a webpage.
+        </p>
+
+        <div class="accordion accordion-flush" id="accordionFlushExampleTwo">
+            <div class="flexcontainer">
+                <div class="accordion-item felxbox">
+                    <h3 class="accordion-header">
+                        <button aria-controls="flush-collapseThree" aria-expanded="false"
+                                class="accordion-button collapsed"
+                                data-bs-target="#flush-collapseThree" data-bs-toggle="collapse"
+                                type="button">
+                            <div>Classes</div>
+                        </button>
+                    </h3>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
+                         id="flush-collapseThree">
+                        <div class="accordion-body">
+                            <div class="border">
+                                CSS: <br>
+                                <code>
+                                    .nameOfClass {
+                                    <div class="abstand">color: red;</div>
+                                    }
+                                </code> <br>
+                            </div>
+                            <div>Selects all items with this class</div>
+                            <div class="border">
+                                CSS: <br>
+                                <code>
+                                    div.nameOfClass {
+                                    <div class="abstand">color: red;</div>
+                                    }
+                                </code>
+                            </div>
+                            <div>Selects all div items with this class</div>
+                            <div class="border">
+                                HTML:<br>
+                                <code>
+                                    < div class="nameOfClass" >
+                                    <div class="abstand">some content</div>
+                                    < /div >
+                                </code>
+                            </div>
+                            <div>Gives a div a class</div>
+                        </div>
                     </div>
-                    <div>Selects all p elements. In this case it colors every p element red.</div>
+                </div>
+                <div class="accordion-item felxbox">
+                    <h3 class="accordion-header">
+                        <button aria-controls="flush-collapseFour" aria-expanded="false"
+                                class="accordion-button collapsed"
+                                data-bs-target="#flush-collapseFour" data-bs-toggle="collapse"
+                                type="button">
+                            <div>IDs</div>
+                        </button>
+                    </h3>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
+                         id="flush-collapseFour">
+                        <div class="accordion-body">
+                            <div class="border">
+                                CSS:<br>
+                                <code>
+                                    #nameOfID {
+                                    <div class="abstand">color: red;</div>
+                                    }
+                                </code>
+                            </div>
+                            <div>Selects the element with this ID</div>
+                            <div class="border">
+                                HTML: <br>
+                                <code>
+                                    < p id="nameOfID" > content < /p >
+                                </code>
+                            </div>
+                            <div>Gives a p an ID</div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        </div>
-    </div>
 
+        <h2><b>Descendant</b></h2>
+        <p>
+            The descendant selector in CSS, denoted by a whitespace character, targets elements that are nested
+            within another element, irrespective of their depth in the HTML structure. This selector allows
+            developers to apply styles specifically to elements within a certain hierarchy, providing a flexible and
+            context-sensitive approach to styling. It is particularly useful for managing the visual presentation of
+            nested elements without affecting the styling of other parts of the webpage.
+        </p>
+        <div class="accordion accordion-flush" id="accordionFlushExampleThree">
 
-
-    <h2><b>Classes & IDs</b></h2>
-    <div class="accordion accordion-flush" id="accordionFlushExampleTwo">
-        <div class="flexcontainer">
-            <div class="accordion-item felxbox">
+            <div class="accordion-item">
                 <h3 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        <div>Classes</div>
+                    <button aria-controls="flush-collapseFive" aria-expanded="false"
+                            class="accordion-button collapsed"
+                            data-bs-target="#flush-collapseFive" data-bs-toggle="collapse"
+                            type="button">
+                        <div>descendant</div>
                     </button>
                 </h3>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
+                     id="flush-collapseFive">
                     <div class="accordion-body">
                         <div class="border">
                             <code>
-                                * {
+                                div p{
                                 <div class="abstand">color: red;</div>
                                 }
                             </code>
                         </div>
-                        <div>Selects all items. In this case it colors every element red</div>
-                        <div class="border">
-                            <code>
-                                div * {
-                                <div class="abstand">color: red;</div>
-                                }
-                            </code>
-                        </div>
-                        <div>Selects all items inside a certain element. In this case it colors every p element inside a div red.</div>
-                    </div>
-                </div>
-            </div>
-            <div class="accordion-item felxbox">
-                <h3 class="accordion-header">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        <div>IDs</div>
-                    </button>
-                </h3>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">
-                        <div class="border">
-                            CSS:<br>
-                            <code>
-                                #nameOfAnID {
-                                <div class="abstand">color: red;</div>
-                                }
-                            </code> <br>
-                            HTML: <br>
-                            <code>
-                                < p id="nameOfAnID" >hello < /p >
-                            </code>
-                        </div>
-                        <div>Selects all p elements. In this case it colors every p element red.</div>
+                        <div>Selects every p inside a div.</div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+
+        <h2><b>Sibling Selectors</b></h2>
+
+        <p>
+            In CSS, the tilde (~) and plus (+) symbols are called sibling selectors. The tilde selects all siblings that share the same parent and come after the specified element, regardless of their position. The plus selector focuses on the immediate adjacent sibling element that directly follows the specified element. These selectors provide a way to style elements based on their relationship with adjacent siblings, offering precision and flexibility in CSS styling.
+        </p>
+        <div class="accordion accordion-flush" id="accordionFlushExampleFour">
+            <div class="flexcontainer">
+                <div class="accordion-item felxbox">
+                    <h3 class="accordion-header">
+                        <button aria-controls="flush-collapseSix" aria-expanded="false"
+                                class="accordion-button collapsed"
+                                data-bs-target="#flush-collapseSix" data-bs-toggle="collapse"
+                                type="button">
+                            <div>sibling</div>
+                        </button>
+                    </h3>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
+                         id="flush-collapseSix">
+                        <div class="accordion-body">
+                            <div class="border">
+                                <code>
+                                    div ~ p {
+                                    <div class="abstand">color: red;</div>
+                                    }
+                                </code>
+                            </div>
+                            <div>Selects every p with a div as a parent element</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item felxbox">
+                    <h3 class="accordion-header">
+                        <button aria-controls="flush-collapseSeven" aria-expanded="false"
+                                class="accordion-button collapsed"
+                                data-bs-target="#flush-collapseSeven" data-bs-toggle="collapse"
+                                type="button">
+                            <div>adjacent sibling</div>
+                        </button>
+                    </h3>
+                    <div class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
+                         id="flush-collapseSeven">
+                        <div class="accordion-body">
+                            <div class="border">
+                                <code>
+                                    div + p{
+                                    <div class="abstand">color: red;</div>
+                                    }
+                                </code>
+                            </div>
+                            <div>Selects all p elements directly after a div</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <h2><b>Direct Child</b></h2>
+        <p>
+            The descendant selector in CSS, denoted by a whitespace character, targets elements that are nested
+            within another element, irrespective of their depth in the HTML structure. This selector allows
+            developers to apply styles specifically to elements within a certain hierarchy, providing a flexible and
+            context-sensitive approach to styling. It is particularly useful for managing the visual presentation of
+            nested elements without affecting the styling of other parts of the webpage.
+        </p>
+        <div class="accordion accordion-flush" id="accordionFlushExampleFive">
+
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button aria-controls="flush-collapseFive" aria-expanded="false"
+                            class="accordion-button collapsed"
+                            data-bs-target="#flush-collapseFive" data-bs-toggle="collapse"
+                            type="button">
+                        <div>descendant</div>
+                    </button>
+                </h3>
+                <div class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
+                     id="flush-collapseEight">
+                    <div class="accordion-body">
+                        <div class="border">
+                            <code>
+                                div > p{
+                                <div class="abstand">color: red;</div>
+                                }
+                            </code>
+                        </div>
+                        <div>Selects every p which is a direct child of the div.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
     </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</div>
+</div>
+</div>
+<script crossorigin="anonymous"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
