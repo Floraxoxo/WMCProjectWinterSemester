@@ -44,3 +44,12 @@ button div{
 code{
     color: #3799d6;
 }
+
+dt{
+    font-weight: normal;
+    font-size: 1.8rem;
+    margin-bottom: -0.4rem;
+}
+dd{
+    margin-left: 1rem;
+}

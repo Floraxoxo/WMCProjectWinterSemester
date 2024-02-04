@@ -6,8 +6,8 @@
     <title>CSS about CSS</title>
     <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
           integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet">
-    <link href="style.css" rel="stylesheet">
-    <link href="selectors.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/selectors.css" rel="stylesheet">
 </head>
 <body>
 
@@ -235,7 +235,11 @@
         <h2><b>Sibling Selectors</b></h2>
 
         <p>
-            In CSS, the tilde (~) and plus (+) symbols are called sibling selectors. The tilde selects all siblings that share the same parent and come after the specified element, regardless of their position. The plus selector focuses on the immediate adjacent sibling element that directly follows the specified element. These selectors provide a way to style elements based on their relationship with adjacent siblings, offering precision and flexibility in CSS styling.
+            In CSS, the tilde (~) and plus (+) symbols are called sibling selectors. The tilde selects all siblings that
+            share the same parent and come after the specified element, regardless of their position. The plus selector
+            focuses on the immediate adjacent sibling element that directly follows the specified element. These
+            selectors provide a way to style elements based on their relationship with adjacent siblings, offering
+            precision and flexibility in CSS styling.
         </p>
         <div class="accordion accordion-flush" id="accordionFlushExampleFour">
             <div class="flexcontainer">
@@ -290,21 +294,23 @@
 
         <h2><b>Direct Child</b></h2>
         <p>
-            The descendant selector in CSS, denoted by a whitespace character, targets elements that are nested
-            within another element, irrespective of their depth in the HTML structure. This selector allows
-            developers to apply styles specifically to elements within a certain hierarchy, providing a flexible and
-            context-sensitive approach to styling. It is particularly useful for managing the visual presentation of
-            nested elements without affecting the styling of other parts of the webpage.
+            In CSS, the direct child selector, denoted by the greater-than symbol (>), serves to target and style
+            elements that are immediate children of a specified parent in the HTML document. In HTML, a direct child
+            refers to an element that is nested directly inside another element without any intervening elements in
+            between. For example, if a < ul > element contains several < li > elements, those < li > elements are
+            considered direct children of the < ul >. The direct child selector provides a precise way to apply styles
+            exclusively to these immediate child elements, offering a focused approach to styling without affecting
+            nested descendants further down the HTML structure.
         </p>
         <div class="accordion accordion-flush" id="accordionFlushExampleFive">
 
             <div class="accordion-item">
                 <h3 class="accordion-header">
-                    <button aria-controls="flush-collapseFive" aria-expanded="false"
+                    <button aria-controls="flush-collapseEight" aria-expanded="false"
                             class="accordion-button collapsed"
-                            data-bs-target="#flush-collapseFive" data-bs-toggle="collapse"
+                            data-bs-target="#flush-collapseEight" data-bs-toggle="collapse"
                             type="button">
-                        <div>descendant</div>
+                        <div>direct child</div>
                     </button>
                 </h3>
                 <div class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample"
@@ -323,7 +329,25 @@
             </div>
         </div>
 
-
+        <h2><b>Pseudo Classes</b></h2>
+        <p>Pseudo-classes in CSS introduce a dynamic and interactive dimension to styling, allowing developers to select
+            and style elements based on their state or position within the document. Unlike regular classes or IDs,
+            pseudo-classes don't rely on explicit markup but rather on the inherent characteristics or behavior of the
+            elements. These selectors enable the application of styles to elements under specific conditions, such as
+            hovering over a link, targeting the first child, or selecting every even element, providing a versatile and
+            responsive approach to designing web interfaces. Pseudo-classes contribute to the flexibility and
+            adaptability of CSS styling by responding to user interactions and document structure dynamically.
+        </p>
+        <dl>
+            <dt>:link</dt>
+            <dd>- pseudo class for styling a link in general</dd>
+            <dt>:active</dt>
+            <dd>- pseudo class for styling a link you click on</dd>
+            <dt>:visited</dt>
+            <dd>- pseudo class for styling a link after you clicked it</dd>
+            <dt>:hover</dt>
+            <dd>- pseudo class for styling an element you hover</dd>
+        </dl>
     </div>
 </div>
 </div>
