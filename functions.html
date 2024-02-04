@@ -46,12 +46,15 @@
             </p>
             <div class="position-relative">
                 <code class="position-absolute top-50 start-50 translate-middle">
-                    <span data-bs-toggle="tooltip" title="selector">p</span> <span data-bs-toggle="tooltip" title="declaration block">{<span
-                        data-bs-toggle="tooltip" title="property">font-size:</span> <span data-bs-toggle="tooltip" title="value">2rem;</span>}</span>
+                    <span data-bs-toggle="tooltip" title="selector">p</span> <span data-bs-toggle="tooltip"
+                                                                                   title="declaration block">{<span
+                        data-bs-toggle="tooltip" title="property">font-size:</span> <span data-bs-toggle="tooltip"
+                                                                                          title="value">2rem;</span>}</span>
                 </code>
             </div>
             <p class="gap">
-                This structure ensures clarity and precision in specifying styles for HTML elements, making the CSS command effective and well-organized within a stylesheet.
+                This structure ensures clarity and precision in specifying styles for HTML elements, making the CSS
+                command effective and well-organized within a stylesheet.
             </p>
         </section>
         <section>
@@ -71,27 +74,73 @@
                     <td><code>p{color: blue;}</code></td>
                 </tr>
                 <tr>
-                    <td>background</td>
-                    <td>Jacob</td>
-                    <td>Thornton</td>
+                    <td>font</td>
+                    <td>gives the text a specific font</td>
+                    <td><code>p{font-family: Centaur}</code></td>
                 </tr>
                 <tr>
-                    <th>size</th>
-                    <td>Larry the Bird</td>
-                    <td>text</td>
+                    <td>size</td>
+                    <td>gives the text a specific size</td>
+                    <td><code>p{font-size: 2rem;}</code></td>
                 </tr>
                 <tr>
-                    <th>weight</th>
-                    <td>Larry the Bird</td>
-                    <td>text</td>
+                    <td>weight</td>
+                    <td>gives the text a specific weight for example bold</td>
+                    <td><code>p{font-weight: bold;}</code></td>
                 </tr>
                 <tr>
-                    <th>alignment</th>
-                    <td>Larry the Bird</td>
-                    <td>text</td>
+                    <td>alignment</td>
+                    <td>aligns the given text</td>
+                    <td><code>p{text-align: justify}</code></td>
+                </tr>
+                <tr>
+                    <td>decoration</td>
+                    <td>decorated the given text for example underlines it</td>
+                    <td><code>p{text-decoration: underline;}</code></td>
+                </tr>
+                <tr>
+                    <td>indent</td>
+                    <td>specifies the indentation of the first line in a text-block</td>
+                    <td><code>p{text-indent: 5rem;}</code></td>
+                </tr>
+                <tr>
+                    <td>orientation</td>
+                    <td>specifies the orientation of characters</td>
+                    <td><code>p{text-orientation: mixed;}</code></td>
                 </tr>
                 </tbody>
             </table>
+        </section>
+        <section id="color">
+            <h2><b>Colors</b></h2>
+            <p>
+                In CSS you can do a lot of different things with colors. As already mentioned in the section before you
+                can color your text.
+                But there is more to colors than just that.
+            </p>
+            <p>
+                But before we dive into that you have to know that in CSS there are four different ways to select a
+                color:
+                <dl>
+                    <dt>by color names</dt>
+                    <dd>- CSS already gives you some colors. You just have to select them by their name.</dd>
+                    <dt>as rgb values</dt>
+                    <dd>- An gb color value is specified with: rgb( RED , GREEN , BLUE )</dd>
+                    <dd>- Each parameter defines the intensity of the color as an integer between 0 and 255</dd>
+                    <dt>as hexadecimal values</dt>
+                    <dd>- A hexadecimal color is specified with: #RRGGBB</dd>
+                    <dd>- RR (red), GG (green) and BB (blue) are hexadecimal integers between 00 and FF specifying the intensity of the color</dd>
+                    <dt>with currentcolor</dt>
+                    <dd>- currentcolor is a keyword which refers to the value of the color property of an element</dd>
+                </dl>
+            </p>
+            
+        </section>
+        <section id="transition">
+            <h2><b>Transitions</b></h2>
+        </section>
+        <section id="animation">
+            <h2><b>Animation</b></h2>
         </section>
 
     </div>
