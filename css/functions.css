@@ -10,3 +10,18 @@ h1:hover{
 .content{
     padding-top: 2.5rem;
 }
+#structure code{
+    font-size: 1.7rem;
+    margin-block: 2rem;
+}
+#structure code span{
+    font-size: 1.7rem;
+    transition: font-size 2s ease, font-weight 2s ease;
+}
+#structure code span:hover{
+    font-size: 2rem;
+    font-weight: bold;
+}
+.gap{
+    margin-top: 7rem;
+}

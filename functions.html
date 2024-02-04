@@ -2,33 +2,107 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
     <title>CSS about CSS</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/functions.css">
+    <link crossorigin="anonymous" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/functions.css" rel="stylesheet">
 </head>
 <body>
-
 <div id="nav">
     <ul>
         <li><img src="wmc.webp"></li>
         <li><a href="introduction.html">Introduction</a></li>
         <li><a href="history.html">History</a></li>
-        <li><a href="selectors.html">Selectors</a></li>
         <li><a href="functions.html">Functions</a></li>
+        <li><a href="selectors.html">Selectors</a></li>
     </ul>
 </div>
 <div id="navDownwards">
     <ul>
-        
+        <li><a href="#">Start</a></li>
+        <li><a href="#structure">Structure</a></li>
     </ul>
 </div>
 
 <div class="content">
     <h1>Functions</h1>
+    <p>
+        On this page you are going to learn some of the most important/used CSS functions.
+        But first of all you should know how you have to structure your "code" in CSS.
+    </p>
+    <div class="information">
 
+        <section id="structure">
+            <h2><b>Structure</b></h2>
+            <p>
+                The correct structure of a CSS command follows a specific pattern, consisting of a selector and a
+                declaration block. The selector identifies the HTML element or elements to which the style rules will be
+                applied. It is followed by an opening curly brace '{'. Inside the curly braces, we find the declaration
+                block, which contains one or more property-value pairs separated by semicolons. Each property defines
+                the style attribute to be modified, and its corresponding value specifies the desired styling for the
+                selected element(s). The declaration block concludes with a closing curly brace '}'.
+            </p>
+            <div class="position-relative">
+                <code class="position-absolute top-50 start-50 translate-middle">
+                    <span data-bs-toggle="tooltip" title="selector">p</span> <span data-bs-toggle="tooltip" title="declaration block">{<span
+                        data-bs-toggle="tooltip" title="property">font-size:</span> <span data-bs-toggle="tooltip" title="value">2rem;</span>}</span>
+                </code>
+            </div>
+            <p class="gap">
+                This structure ensures clarity and precision in specifying styles for HTML elements, making the CSS command effective and well-organized within a stylesheet.
+            </p>
+        </section>
+        <section>
+            <h2><b>Styling Text</b></h2>
+            <table class="table">
+                <thead>
+                <tr>
+                    <th scope="col">Command</th>
+                    <th scope="col">Effect</th>
+                    <th scope="col">Example</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>color</td>
+                    <td>colors the text</td>
+                    <td><code>p{color: blue;}</code></td>
+                </tr>
+                <tr>
+                    <td>background</td>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                </tr>
+                <tr>
+                    <th>size</th>
+                    <td>Larry the Bird</td>
+                    <td>text</td>
+                </tr>
+                <tr>
+                    <th>weight</th>
+                    <td>Larry the Bird</td>
+                    <td>text</td>
+                </tr>
+                <tr>
+                    <th>alignment</th>
+                    <td>Larry the Bird</td>
+                    <td>text</td>
+                </tr>
+                </tbody>
+            </table>
+        </section>
+
+    </div>
 </div>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script type="text/javascript">
+    $(function () {
+        $("[rel='tooltip']").tooltip();
+    });
+</script>
+<script crossorigin="anonymous"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

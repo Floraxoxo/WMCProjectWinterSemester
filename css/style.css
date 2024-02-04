@@ -1,4 +1,4 @@
-/* general info */
+/* general things */
 html, body {
     height: 100%;
     width: 100%;
@@ -7,6 +7,15 @@ body{
     font-family: "Baskerville Old Face";
     color: #333333;
     margin:0;
+}
+h2{
+    text-align: center;
+    padding-top: 5.5rem;
+    padding-bottom: 0.5rem;
+    font-size: 2.5rem;
+}
+code{
+    color: #3799d6;
 }
 /*-----------*/
 /* nav stuff */
@@ -76,7 +85,7 @@ body{
     color: white;
 }
 /*-----------*/
-/*content*/
+/*content & information*/
 .content{
     margin-left: 10%;
     margin-top: 5.5%;
@@ -88,17 +97,12 @@ body{
     padding-right: 3rem;
     font-size: 1.5rem;
 }
-/*-----------*/
 .information{
     padding-bottom: 3rem;
+}
+/*-----------*/
 
-}
-h2{
-    text-align: center;
-    padding-top: 5.5rem;
-    padding-bottom: 0.5rem;
-    font-size: 2.5rem;
-}
+
 
 
 
