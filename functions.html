@@ -23,7 +23,8 @@
     <ul>
         <li><a href="#">Start</a></li>
         <li><a href="#structure">Structure</a></li>
-        <li><a href="#basicStyling"></a>Basics</li>
+        <li><a href="#basicStyling">Basics</a></li>
+        <li><a href="#color">Colors</a></li>
     </ul>
 </div>
 
@@ -136,17 +137,38 @@
                 </dl>
             </p>
             <p>
-                Now that we learned about the different ways to select a color this website is going to introduce you to
+                Now that you learned about the different ways to select a color this website is going to introduce you to the functions of colors.
             </p>
-            
+            <h3>Background Colors</h3>
+            <p>
+                CSS background colors are crucial for shaping the visual look of HTML elements on a webpage.
+                They enable developers to define the canvas on which content appears, impacting the overall design and user interaction.
+                Background colors can be assigned to the whole page, specific sections, or individual elements like divs and buttons.
+            </p>
+            <code>div{background-color: color;}</code>
+            <h3>Gradients</h3>
+            <p>
+                Gradients in CSS offer a versatile and visually striking way to transition smoothly between multiple colors, adding depth and dimension to web designs.
+                Gradients enable developers to create gradual color transitions, moving seamlessly from one hue to another within a specified space.
+                CSS provides two main types of gradients: linear gradients, which transition along a straight line, and radial gradients, which radiate from a central point outward.
+                These gradients can be applied to a variety of CSS properties, including backgrounds, borders, and text, allowing for creative and dynamic styling effects.
+                By leveraging gradients, web developers can enhance the aesthetics of their designs, providing a modern and engaging user experience.
+            </p>
+            <dl>
+                <dt>Linear gradient</dt>
+                <dd>
+                    <code>background-image: gradientType-gradient(gradientDirection, colorStop1, colorStop2);</code>
+                </dd>
+                <dt>Radial gradient</dt>
+                <dd>
+                    <code>background-image: radial-gradient(shape size at position, start-color, ..., last-color);</code>
+                </dd>
+                <dt>Conic gradient</dt>
+                <dd>
+                    <code>background-image: conic-gradient([from angle] [at position,] color [degree], color [degree], ...);</code>
+                </dd>
+            </dl>
         </section>
-        <section id="transition">
-            <h2><b>Transitions</b></h2>
-        </section>
-        <section id="animation">
-            <h2><b>Animation</b></h2>
-        </section>
-
     </div>
 </div>
 <script type="text/javascript">
